@@ -3,11 +3,20 @@
 }
 
 
-
-
 @media(max-width:992px){
     .header-flex{
         justify-content: space-between;
+    } 
+    .sec1-text-wraper {
+        gap: 0.75rem;
+      }
+    .sec1-text-wraper h2 {
+        font-family: 'Nunito-bold', sans-serif;
+        font-size: 3rem;
+        line-height: 4rem;
+        color: #000000;
+        width: 79%;
+        margin-top: 100px;
     }
     .burger-bar{
         display: block;

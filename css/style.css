@@ -57,7 +57,7 @@
 .sec1-text-wraper {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 1.5rem;
     width: 100%;
 }  
 .sec1-text-wraper h2 {
