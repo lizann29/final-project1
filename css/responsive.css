@@ -4,7 +4,7 @@
 
 
 @media(max-width:992px){
-    .header-flex{
+    /* .header-flex{
         justify-content: space-between;
     } 
     .sec1-text-wraper {
@@ -17,7 +17,7 @@
         color: #000000;
         width: 79%;
         margin-top: 100px;
-    }
+    } */
     .burger-bar{
         display: block;
     }
