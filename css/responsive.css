@@ -75,6 +75,17 @@
 
 
 @media(max-width:576px){
+       
+       /* first section possibly */
+       .sec1-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 1rem;
+      }
+  
+
       /* thid section */
       .sec3-content-wrapper {
         width: 90%; 
@@ -90,5 +101,6 @@
         width: 100%;
         max-width: none; 
         }
-      
+
+        
 }

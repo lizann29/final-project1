@@ -2,8 +2,8 @@
     background-color: #fff3e4;
     width: 100%;
     height: auto;
-    /* position: fixed;
-    z-index: 9999; */
+     position: fixed;
+    z-index: 9999; 
 }
 .header-flex{
     display: flex;
