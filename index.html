@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill Cafe</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-wraper header-flex">
+        <div>
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <nav class="nav-bar">
+          <ul class="nav-ul-items">
+            <li><a class="nav-a" id="click-home" href="#section1">HOME</a></li>
+            <li><a class="nav-a" href="">GALLERY</a></li>
+            <li><a class="nav-a" id="click-menu" href="#section2">MENU</a></li>
+            <li>
+              <a class="nav-a">ABOUT US</a>
+            </li>
+            <li>
+              <a class="nav-a" id="click-contact" href="#section4"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-bar">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+      </div>
+    </header>
+    <!-- First section: EAT DRINK CHILL-->
+    <section id="section1">
+      <div class="sec1-wraper">
+        <div class="sec1-info-wraper">
+          <div class="sec1-text-wraper">
+            <h2>DRINK EAT <span>CHILL</span></h2>
+            <p>
+              Enjoy the best chill vibes while your stay at heavenly Sri Lanka
+            </p>
+          </div>
+          <button class="btn-reserve" id="btn-reserve" type="button">
+            RESERVE NOW
+          </button>
+          <div class="sec1-contact">
+            <a href="tel:+9477 180 4020">+9477 180 4020</a>
+            <p>08:30AM to 02:00AM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Second Section: MENU -->
+    <section id="section2">
+      <div class="sec2-wrapper">
+        <h2>OUR <span> MENU </span></h2>
+        <div class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/image1.jpg" alt="menu-image" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/image2.jpg" alt="menu-image" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/image3.jpg" alt="menu-image" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/image4.jpg" alt="menu-image" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/image5.jpg" alt="menu-image" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/image6.jpg" alt="menu-image" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/image7.jpg" alt="menu-image" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/image8.jpg" alt="menu-image" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/image9.jpg" alt="menu-image" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn-order" id="btn-order" type="button">
+          ORDER NOW
+        </button>
+      </div>
+    </section>
+    <!-- Third Section: Form -->
+    <section id="section3">
+      <div class="sec3-container sec3-flex-wrapper">
+        <div class="sec3-content-wrapper">
+          <div class="sec3-pic">
+            <img src="images/drinkpic.jpg" alt="cocktail picture" />
+          </div>
+          <div class="form-wrapper">
+            <h2>SAY <span>HI</span></h2>
+            <form
+              action=""
+              class="actual-form"
+              id="registration-form"
+              method="post"
+            >
+              <div class="actual-form-div">
+                <input
+                  type="text"
+                  id="username-field"
+                  name="username"
+                  placeholder="Your name"
+                />
+                <p class="error-text" id="error-username"></p>
+              </div>
+              <div class="actual-form-div">
+                <input
+                  type="password"
+                  id="password-field"
+                  name="password"
+                  placeholder="Enter password"
+                />
+                <span class="input-icon">
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <p class="error-text" id="error-password"></p>
+              </div>
+              <div class="actual-form-div">
+                <input
+                  type="email"
+                  id="email-field"
+                  name="email"
+                  placeholder="Your Email"
+                />
+                <p id="error-email"></p>
+              </div>
+              <div class="actual-form-div">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Your mobile number"
+                />
+                <p class="error-text" id="error-phone"></p>
+              </div>
+              <button type="submit" class="btn-send">SEND</button>
+              <!-- <button class="btn-send" type="submit">SEND</button> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
