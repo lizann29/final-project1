@@ -197,4 +197,58 @@ emailField.addEventListener("keydown", function () {
   }
 });
 
+// Fetch
 
+fetch('https://reqres.in/api/users?page=1', {
+  method: 'GET'
+})
+  .then(function (response) {
+    console.log(response.status);
+    if (response.status !== 200) {
+      throw response.status;
+    }
+    return response.json();
+  })
+  .then(responseDataJs => {
+    const users = responseDataJs.data.slice(0, 3); // First three users
+
+    const blockOne = document.getElementById('block-one');
+    const blockTwo = document.getElementById('block-two');
+    const blockThree = document.getElementById('block-three');
+
+    // Create and append user elements to the blocks
+    users.forEach((user, index) => {
+      const userElement = createUserElement(user, index);
+      if (index === 0 && blockOne) {
+        blockOne.appendChild(userElement);
+      } else if (index === 1 && blockTwo) {
+        blockTwo.appendChild(userElement);
+      } else if (index === 2 && blockThree) {
+        blockThree.appendChild(userElement);
+      }
+    });
+  })
+  .catch(error => console.log(error));
+
+  // users 
+function createUserElement(user, index) {
+  const userElement = document.createElement('div');
+  userElement.classList.add('user');
+
+  let paragraphText = '';
+  if (index === 0) {
+    paragraphText = '"Fantastic staff who are absolutely wonderful, serving delicious food that I highly recommend."';
+  } else if (index === 1) {
+    paragraphText = '"Exceptional service provided by the friendly and knowledgeable staff, combined with unbeatable prices, makes it a truly remarkable experience."';
+  } else if (index === 2) {
+    paragraphText = '"It is an excellent location where you can find a wide variety of food options to satisfy any craving you may have."';
+  }
+
+  userElement.innerHTML = `
+    <img src="${user.avatar}" alt="User Avatar">
+    <h3>${user.first_name} ${user.last_name}</h3>
+    <img src="images/stars.png" alt="Stars">
+    <p>${paragraphText}</p>
+  `;
+  return userElement;
+}

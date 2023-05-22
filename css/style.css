@@ -46,6 +46,7 @@
     padding-right: 363px;
     padding-top: 154px;
 }
+
 .sec1-info-wraper{
     display: flex;
     height: auto;
@@ -252,3 +253,40 @@
     margin-bottom: 0;
 
   }
+
+  /* fourth Section */
+.sec4-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5.5rem 0px;
+  margin: 0 auto;
+        background-color: #1f1e1e ;
+}
+
+.single-block{
+  width: 24rem;
+  height: 28rem ;
+  display: flex;
+  flex-direction: column; 
+  padding: 1.5rem;
+  background-color: #F3F3F3;
+  border-radius: 0.5rem;
+} 
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  line-height: 1.364rem;
+  color: #747373;
+}
+
+.user img {
+  border-radius: 50%;
+  object-fit: cover;
+}

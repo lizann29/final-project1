@@ -1,4 +1,11 @@
 @media (max-width: 1200px){
+      /*  The fourth section style*/
+      .sec4-container {
+        padding: 48px 0px;
+    }
+    .single-block {
+        width: 32.7%;
+    }
  /* .header-flex{
         justify-content: space-between;
     } 
@@ -76,6 +83,19 @@
     .sec1-wraper{
         padding-bottom: 1.563rem;
     }
+    
+    /* section 04 */
+    .sec4-container {
+        padding: 24px 0;
+        justify-content: center;
+        gap: 16px;
+    }
+    .single-block:nth-child(3) {
+        display: none;
+      }
+    .single-block {
+        width: 46%;
+    }
 }
 
 
@@ -94,7 +114,7 @@
       }
   
 
-      /* thid section */
+      /* thied section */
       .sec3-content-wrapper {
         width: 90%; 
         margin: 0 auto; 
@@ -109,6 +129,13 @@
         width: 100%;
         max-width: none; 
         }
-
-        
+/* fourth section */
+    .single-block:nth-child(3),
+    .single-block:nth-child(2) {
+    display: none;
+  }
+    .single-block {
+        width: 90%;
+        margin: 0 auto;
+      }
 }
