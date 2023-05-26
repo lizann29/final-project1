@@ -10,20 +10,7 @@
     .single-block {
         width: 25.7%;
     } 
- /* .header-flex{
-        justify-content: space-between;
-    } 
-    .sec1-text-wraper {
-        gap: 0.75rem;
-      }
-    .sec1-text-wraper h2 {
-        font-family: 'Nunito-bold', sans-serif;
-        font-size: 3rem;
-        line-height: 4rem;
-        color: #000000;
-        width: 79%;
-        padding-top: 5.25rem;
-    }  */
+
 }
 
 @media(max-width:992px){
@@ -107,8 +94,6 @@
       }
 
 }
-
-
 
 @media(max-width:576px){
        
