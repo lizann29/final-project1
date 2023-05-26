@@ -1,5 +1,8 @@
 @media (max-width: 1200px){
     
+    @keyframes grow {
+        100% {left: 0};}
+    
       /*  The fourth section style*/
       .sec4-container {
         padding: 48px 0px;
@@ -97,9 +100,13 @@
     .single-block {
         width: 46%;
     }
+    /* footer */
+    .footer-flex {
+        grid-template-columns: 1fr; 
+        align-items: center; 
+      }
+
 }
-
-
 
 
 
@@ -140,3 +147,5 @@
         margin: 0 auto;
       }
 }
+
+

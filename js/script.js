@@ -253,18 +253,4 @@ function createUserElement(user, index) {
   return userElement;
 }
 
-// // Get the necessary elements
-// const seeMoreContainer = document.querySelector('.see-more-container');
-// const btnSeeMore = document.querySelector('#btn-see-more');
-// const blockTwo = document.querySelector('#block-two');
-// const blockThree = document.querySelector('#block-three');
 
-// // Function to handle "See More" button click
-// function handleSeeMoreClick() {
-//   // Toggle the visibility of block two and three
-//   blockTwo.style.display = blockTwo.style.display === 'none' ? 'block' : 'none';
-//   blockThree.style.display = blockThree.style.display === 'none' ? 'block' : 'none';
-// }
-
-// // Add event listener to the "See More" button
-// btnSeeMore.addEventListener('click', handleSeeMoreClick);

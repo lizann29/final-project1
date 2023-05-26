@@ -327,43 +327,9 @@
   margin: 0 auto;
   padding-bottom: 1.625rem;
 }
-
-/* 5th section */
-/* .sec5-wrapper{
-  background-image: url("../images/bgimagee.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 77vh;
-  width: 100%;
-  padding-right: 363px;
-  padding-top: 154px;
-}
-
-.sec-5text{
-  display: flex;
-  height: auto;
-  gap: 2rem; */
-  /* width: 18rem; */
-  /* flex-wrap: wrap;
-  gap: 1.5rem;
-} 
-.sec-5text h2 {
-  font-family: 'Nunito-bold', sans-serif;
-  font-size: 4rem;
-  line-height: 5.82rem;
-  color: #ffffff;
-  width: 79%;
-}
-.sec-5text p {
-  font-family: 'Nunito-bold', sans-serif;
-  font-size: 1rem;
-  line-height: 1.364rem;
-  color: #ffffff;
-  width: 100%;
-}  */
-
-.sec5-wrapper {
-  background-image: url("../images/bgimagee.jpg");
+/* Section 5 */
+ .sec5-wrapper {
+  background-image: url("../images/sec4bgimage.jpg");
   background-size: cover;
   background-position: center;
   height: 77vh;
@@ -396,4 +362,69 @@
   font-size: 0.9rem;
   line-height: 1.2rem;
   color: #ffffff;
+} 
+/* footer */
+
+.footer-container {
+  background-color: #fff3e4;
+  width: 100%;
+  height: auto;
+}
+
+.footer-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 2rem; 
+  justify-items: center;
+  align-items: flex-start; 
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.footer-contact h3,
+.footer-address h3,
+.footer-wh h3 {
+  font-family: 'Nunito-bold', sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #f0972b;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-contact p,
+.footer-address p,
+.footer-wh p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  line-height: 1.364rem;
+  color: #000000;
+}
+
+.footer-a {
+  color: #747373;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+}
+
+.map {
+  width: 100%;
+}
+
+.social-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: black; /* Set the color to black */
+}
+
+.social-div a i {
+  font-size: 1rem;
 }
